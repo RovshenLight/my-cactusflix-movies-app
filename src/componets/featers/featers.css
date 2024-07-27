@@ -1,0 +1,191 @@
+.featers {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+}
+
+.featers>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+-webkit-box-shadow: 1px 14px 48px -6px rgba(76, 141, 46, 1);
+  -moz-box-shadow: 1px 14px 48px -6px rgba(76, 141, 46, 1);
+  box-shadow: 1px 14px 48px -6px rgba(76, 141, 46, 1);
+}
+
+.swipe button {
+  position: absolute;
+  bottom: 2%;
+  left: 2rem;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+}
+.swipe2 button {
+  position: absolute;
+  bottom: 2%;
+  right: 2rem;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.desc {
+  bottom: 100px;
+  left: 50px;
+  position: absolute;
+  width: 45%;
+  text-shadow: 0 2px 5px black;
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+}
+
+
+.featers__btn {
+  margin-top: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featers__btn .play {
+  margin-right: 1rem;
+  border-radius: 0.9rem;
+}
+
+.featers__btn .info {
+  margin-right: 1rem;
+  border-radius: 1rem;
+
+}
+.featers__btn .info button {
+  border-color: rgb(50, 151, 205);
+  color: rgb(50, 151, 205);
+  background: rgba(0,0,0,0.9);
+}
+
+.featers__btn .info button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(50, 151, 205);
+}
+
+.featers__btn .info button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(50, 151, 205);
+  box-shadow: 0 0 2em 0.2em rgb(50, 151, 205);
+}
+
+.featers__btn .info button {
+  border: 0.15em solid rgb(50,151,205);
+
+  -webkit-box-shadow: inset 0px 0px 0.5em 0px rgb(50,151,205),
+    0px 0px 0.5em 0px rgb(50,151,205);
+  -moz-box-shadow: inset 0px 0px 0.5em 0px rgb(50,151,205),
+    0px 0px 0.5em 0px rgb(50,151,205);
+  box-shadow: inset 0px 0px 0.5em 0px rgb(50,151,205),
+    0px 0px 0.5em 0px rgb(50,151,205);
+  animation: border-flicker 2s linear infinite;
+}
+
+.featers__btn .info button:hover {
+  color: #000;
+}
+
+.featers__btn svg {
+  margin-top: 0.5rem;
+  font-size: 2rem;
+}
+
+.category {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+
+.custom-select {
+  margin-left: 1rem;
+  width: 150px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: url('../../assets/NeonLinkSelectGreen.jpg'), auto;
+ background: linear-gradient(308deg, rgb(29, 70, 8) 0%, rgb(70, 80, 23) 52%, rgb(84, 76, 40) 100%);
+}
+
+.custom-option {
+  display: flex;
+  align-items: center;
+}
+
+.featers__alert {
+  position: absolute;
+  top: 15rem;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featers__loanding {
+  margin-top: 10px;
+  width: 150px;
+}
+
+.featers h6 {
+  font-size: 4rem;
+  font-weight: 700;
+  background: -webkit-linear-gradient(308deg, rgba(82,189,27,0.9417016806722689) 0%, rgba(175,204,21,0.8940826330532213) 52%, rgba(144, 134, 117, 0.894) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.featers p {
+  font-weight: 800;
+  line-height: 1;
+  color: greenyellow;
+  text-shadow: 4px 0px 3px rgba(78, 0, 163, 0.8);
+}
+
+@media screen and (max-width:600px) {
+  .featers h6 {
+    font-size: 2rem;
+    }
+  .desc {
+    font-size: 12px;
+    width: 60%;
+    bottom: 70px;
+  }
+}
+
+@media screen and (max-width:360px) {
+  .featers h6 {
+    font-size: 1.5rem;
+    }
+  .desc {
+    font-size: 12px;
+    width: 80%;
+    bottom: 30px;
+  }
+
+  .custom-select {
+    width: 100px;
+  }
+}
+

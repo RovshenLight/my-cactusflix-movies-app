@@ -1,0 +1,68 @@
+.list {
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.list__wrapper {
+  margin-top: 2rem;
+  }
+
+.list__title {
+  background: -webkit-linear-gradient(308deg, rgb(165, 228, 133) 0%, rgb(205, 220, 129) 52%, rgba(207,202,180,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 3rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+ 
+}
+
+.wrapper {
+  margin-top: 1rem;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.list__svg {
+  height: 100%;
+  z-index: 99;
+  width: 2rem;
+  background: rgba(0,0,0,0.8);
+  box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: url('../../assets/NeonLinkSelectGreen.jpg'), auto;
+  transition: all 0.4s;
+}
+
+
+.right {
+  right: 0.5rem;;
+}
+
+.left {
+  left: 0.5rem;
+}
+
+
+.list__container {
+  display: flex;
+  width: max-content;
+  margin-left: 3rem;
+  transition: all 1s;
+}
+.list__alert {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list__loanding {
+  margin-top: 10px;
+  width: 150px;
+}

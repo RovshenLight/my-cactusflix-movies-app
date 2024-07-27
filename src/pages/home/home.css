@@ -1,0 +1,4 @@
+.home {
+ background: var(--main-bg);
+ overflow: hidden;
+}

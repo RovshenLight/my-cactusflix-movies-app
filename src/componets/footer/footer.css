@@ -1,0 +1,78 @@
+.footer {
+  padding: 30px 9%;
+  margin: 0 auto;
+}
+
+.footer__icons {
+  display: flex;
+  gap: 1rem;
+  margin: 40px 0;
+}
+
+.footer__icons svg {
+  font-size: 30px;
+  cursor: url('../../assets/NeonLinkSelectGreen.jpg'), auto;
+  color: rgb(165, 228, 133) ;
+  transition: all .4s;
+}
+
+.footer__icons svg:hover {
+  animation: myAnim2 2s ease 0s 1 normal forwards;
+}
+
+.footer ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.footer a {
+  display: inline-block;
+  background: -webkit-linear-gradient(308deg, rgb(165, 228, 133) 0%, rgb(205, 220, 129) 52%, rgba(207,202,180,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all .4s;
+  cursor: url('../../assets/NeonLinkSelectGreen.jpg'), auto;
+}
+.footer a:hover {
+  text-shadow: 0 3px 5px rgba(255,255,255,0.6);
+}
+
+.footer__copyright {
+  color: gray;
+  font-size: 1rem;
+}
+
+ @-webkit-keyframes scale-in-top {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-top {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    opacity: 1;
+  }
+}

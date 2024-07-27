@@ -1,0 +1,75 @@
+.watch {
+  width: 100vw;
+  height: 100vh;
+  cursor: url('../../assets/NeonLinkSelectGreen.jpg'), auto;
+}
+
+.watch a {
+  cursor: url('../../assets/NeonLinkSelectGreen.jpg'), auto;
+}
+
+.backtohome {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+
+.watch__icon {
+  margin-right: 1rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 2rem;
+  color: rgb(185, 213, 128);
+  transition: all .4s;
+}
+
+.watch__icon:hover {
+  transform: scale(1.1);
+}
+
+.watch video {
+  width: 98%;
+  height: 98%;
+  margin: 0 auto;
+}
+
+.watch video::-webkit-media-controls-play-button {
+  background-color: rgb(185, 213, 128);
+  border-radius: 2rem;
+  margin: 0 10px 1rem 0;
+  height: 2rem;
+  box-shadow: 0 0 1rem 0  rgb(185, 213, 128);
+  cursor: url('../../assets/NeonLinkSelectGreen.jpg'), auto;
+}
+
+.watch video::-webkit-media-controls-mute-button {
+  background-color: rgb(185, 213, 128);
+  border-radius: 2rem;
+  margin: 1rem 0px 0rem 0;
+  height: 2rem;
+  box-shadow: 0 0 1rem 0  rgb(185, 213, 128);
+  cursor: url('../../assets/NeonLinkSelectGreen.jpg'), auto;
+  }
+
+  .watch video::-webkit-media-controls-timeline {
+    background-color: rgb(185, 213, 128);
+    border-radius: 2rem;
+    padding-top: 1rem;
+    margin: 0rem 0px 1rem 0;
+    height: 4px;
+    box-shadow: 0 0 1rem 0  rgb(185, 213, 128);
+    cursor: url('../../assets/NeonLinkSelectGreen.jpg'), auto;
+    }
+
+    .watch video::-webkit-media-controls-fullscreen-button {
+      background-color: rgb(185, 213, 128);
+      border-radius: 2rem;
+      margin: 0rem 0px 1rem 4px;
+      height: 2rem;
+      box-shadow: 0 0 1rem 0  rgb(185, 213, 128);
+      cursor: url('../../assets/NeonLinkSelectGreen.jpg'), auto;
+      }

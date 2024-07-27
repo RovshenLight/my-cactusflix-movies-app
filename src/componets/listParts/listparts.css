@@ -1,0 +1,164 @@
+.listparts {
+  width: 225px;
+  height: 120px;
+  margin-left: 15px;  
+  cursor: url('../../assets/NeonLinkSelectGreen.jpg'), auto;
+  color: rgb(185, 213, 128);
+  box-shadow: 0px 0px 2px 0px rgb(185, 213, 128);
+  border-radius: 5px;
+}
+
+
+.listparts img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.listparts video {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 180px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.listparts:hover {
+  height: 180px;
+  width: 425px;
+  box-shadow: 0 2px 15px 0px rgb(185, 213, 128);
+  position: absolute;
+  top: -150px;
+  border-radius: 3rem;
+  } 
+
+  .listparts img:hover {
+    height: 140px;
+ 
+  } 
+
+  .listparts__info {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background: #000; 
+  }
+
+  .listparts__icons {
+    display: flex;
+    padding: 5px 10px;
+  }
+
+  .listparts__icons svg {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 2rem;
+    transition: all .4s;
+    cursor: url('../../assets/NeonLinkSelectGreen.jpg'), auto;
+  
+  }
+
+  .listparts__icons svg:first-child {
+    animation: pulse 2s infinite;
+    cursor: url('../../assets/NeonLinkSelectGreen.jpg'), auto;
+  }
+
+  .listparts__icons svg:hover {
+    transform: scale(1.1);
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgb(185, 213, 128);
+    }
+  
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+  
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgb(185, 213, 128);
+    }
+  }
+
+ .listparts__info-data {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: gray;
+  background: #000;  
+}
+
+.info__time-iterm {
+  border: 1px solid gray;
+  padding: 1px 3px;
+  margin: 0 10px;
+}
+
+.listparts__desc {
+  font-size: 13px;
+  padding: 5px 10px;
+  background: #000;  
+}
+
+.listparts__genre {
+  font-size: 14px;
+  color: lightgray;
+  background: #000;  
+  margin-left: 10px;
+}
+
+.listparts__alert {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listparts__loanding {
+  width: 10px;
+}
+
+@media screen and (max-width:440px) {
+
+  .listparts__icons svg {
+    padding: 5px;
+    font-size: 1.6rem;
+  }
+
+  .listparts__info-data {
+    padding: 2px 4px;
+    font-size: 10px;
+  }
+
+  .listparts__desc {
+    font-size: 10px;
+  }
+  
+  .listparts__genre {
+    font-size: 10px;
+  }
+
+  .listparts video {
+    height: 100px;
+    margin: 0 auto;
+  }
+  
+  .listparts:hover {
+    height: 100px;
+    width: 245px;
+   margin: 0 auto;
+    } 
+
+}
