@@ -259,7 +259,8 @@
   border-radius: 4rem;
   position: fixed;
   top: 1rem;
-  right: calc(50% - 25%); 
+  left: 50%;
+  transform: translateX(-50%);
   padding: 10px;
   width: max-content;
   z-index: 999;
@@ -421,7 +422,6 @@
   
   .sticky {
     width: max-content;
-    left: 0;
     top: 0;
     padding: 10px 1%;
     border-radius: 0;
@@ -431,6 +431,7 @@
     width: 100%;
     z-index: 999;
     background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.9) 50%);
+    transition: 0;
   }
 
   .sticky .left {
@@ -486,6 +487,7 @@
     animation: myAnim2 2s ease 0s 1 normal forwards;
   }
 }
+
 
 @media screen and (max-width:400px) {
 

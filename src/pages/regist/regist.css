@@ -106,13 +106,22 @@ justify-content: space-around;
 .regist__container h1 {
   font-size: 2.5rem;
   font-weight: 700;
+  background: -webkit-linear-gradient(308deg, rgb(165, 228, 133) 0%, rgb(205, 220, 129) 52%, rgb(228, 195, 44) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .regist__container h2 {
   margin: 1rem;
   font-size: 1.3rem;
+  background: -webkit-linear-gradient(308deg, rgb(165, 228, 133) 0%, rgb(205, 220, 129) 52%, rgba(207,202,180,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .regist__container p {
   font-size: 1.4rem;
+  background: -webkit-linear-gradient(308deg, rgb(165, 228, 133) 0%, rgb(205, 220, 129) 52%, rgba(207,202,180,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
@@ -133,4 +142,100 @@ justify-content: space-around;
 
 .regist__container label {
   font-size: 2rem;
+  background: -webkit-linear-gradient(308deg, rgb(165, 228, 133) 0%, rgb(205, 220, 129) 52%, rgba(207,202,180,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width:900px) {
+  .regist__container h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .regist__container h2 {
+    margin: 1rem;
+    font-size: 1.3rem;
+  }
+  .regist__container p {
+    font-size: 1rem;
+  }
+  
+}
+@media screen and (max-width:660px) {
+  .regist__container h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .regist__container h2 {
+    text-align: center;
+    margin: 1rem;
+    font-size: 1rem;
+  }
+  .regist__container p {
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+}
+@media screen and (max-width:500px) {
+
+  .regist__container form {
+    margin-top: 1rem;
+    width: 300px;
+  height: 250px;
+  padding: 30px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  }
+
+  .regist__container form>input {
+    border-radius: 5px;
+    height: 25px;
+    padding: 15px;
+    background: linear-gradient(308deg, rgb(29, 70, 8) 0%, rgb(70, 80, 23) 52%, rgb(84, 76, 40) 100%);
+    border: 3px ridge grey;
+  }
+  
+  
+.regist__container form>input {
+  border-radius: 5px;
+  height: 40px;
+  padding: 1rem;
+  background: linear-gradient(308deg, rgb(29, 70, 8) 0%, rgb(70, 80, 23) 52%, rgb(84, 76, 40) 100%);
+  border: 3px ridge grey;
+}
+
+.regist__container label {
+  font-size: 1.5rem;
+}
+
+.regist__button {
+  border-radius: 5px;
+}
+.regist__button button{
+  padding: 5px 104px;
+}
+
+.regist__container label {
+  font-size: 2rem;
+}
+}
+
+@media screen and (max-width:360px) {
+
+  .regist__button button{
+    padding: 5px 108px;
+  }
+}
+
+@media screen and (max-width:359px) {
+  .regist__button {
+    background-color: black;
+  }
+  
 }

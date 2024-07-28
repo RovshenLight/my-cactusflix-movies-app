@@ -76,3 +76,22 @@
     opacity: 1;
   }
 }
+
+@media screen and (max-width:580px) {
+
+  .footer ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 420px) {
+
+  .footer ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+}

@@ -39,11 +39,12 @@ const List = ({dat }) => {
       listRef.current.style.transform = `translateX(${240 + distance}px)`;
       setSlideList(slideList - 1);
     }
-    if(direct === 'right' && slideList < 5) {
+    if(direct === 'right' && slideList < 7 ) {
       listRef.current.style.transform = `translateX(${-230 + distance}px)`;
       setSlideList(slideList + 1);
     }
   }
+
 
   return (
 
