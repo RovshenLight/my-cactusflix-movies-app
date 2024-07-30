@@ -1,12 +1,20 @@
 import React, { createContext, useState, useContext } from 'react';
+import Cookies from 'js-cookie';
 
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(!!Cookies.get('user'));
 
-  const login = () => setIsAuthenticated(true);
-  const logout = () => setIsAuthenticated(false);
+  const login = (username) => {
+    Cookies.set('user', username, { expires: 7 });
+    setIsAuthenticated(true);
+  };
+
+  const logout = () => {
+    Cookies.remove('user');
+    setIsAuthenticated(false);
+  };
 
   return (
     <AuthContext.Provider value={{ isAuthenticated, login, logout }}>
@@ -16,3 +24,4 @@ export const AuthProvider = ({ children }) => {
 };
 
 export const useAuth = () => useContext(AuthContext);
+

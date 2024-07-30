@@ -3,6 +3,7 @@ import CTA from '../../componets/CTA/CTA'
 import './regist.css'
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min'
+import Cookies from 'js-cookie';
 
 const Regist = () => {
 
@@ -22,6 +23,7 @@ const Regist = () => {
       body: JSON.stringify(user)
     })
     .then(() => {
+      Cookies.set('user', email, { expires: 7 });
       history.push('/Login')
     })
 

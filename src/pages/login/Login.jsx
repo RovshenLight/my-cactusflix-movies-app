@@ -27,9 +27,8 @@ const Login = () => {
         const user = users.find(
           user => user.email === email && user.password === password
         );
-
         if (user) {
-          login();
+          login(email);
           history.push('/');
           setError('');
         } else {
