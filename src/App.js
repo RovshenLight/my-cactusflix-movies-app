@@ -35,7 +35,7 @@ function App() {
             <Watch />
           </Route>            
             </>
-          ) }
+          )}
         </Switch>
       </Router>
     </div>

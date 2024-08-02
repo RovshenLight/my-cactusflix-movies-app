@@ -27,7 +27,7 @@ const ListParts = ({index, movie}) => {
       {isHover && (
         <>
       <div className="listparts__info">
-        <video src={process.env.PUBLIC_URL + 'trailer-nobody.mp4'} autoPlay={true} muted loop preload='auto'></video>
+        <video src='https://www.youtube.com/watch?v=hXzcyx9V0xw' autoPlay={true} muted loop preload='auto'></video>
         <div className="listparts__icons">
           <a href="/Watch">
             <BiPlay />

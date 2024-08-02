@@ -11,7 +11,7 @@ const Watch = () => {
         </a>
           Home    
       </div>
-      <video src={process.env.PUBLIC_URL + 'trailer-nobody.mp4'} autoPlay controls progress/>
+      <video src='https://www.youtube.com/watch?v=hXzcyx9V0xw' autoPlay controls progress/>
     </div>
   )
 }
